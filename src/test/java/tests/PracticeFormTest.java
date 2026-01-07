@@ -16,6 +16,7 @@ public class PracticeFormTest {
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.pageLoadStrategy = "eager";
     }
+
     @Test
     void fillFormTest() {
         open("/automation-practice-form");

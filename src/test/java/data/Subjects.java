@@ -1,5 +1,5 @@
 package data;
 
 public enum Subjects {
-Biology, Arts, Physics, Hindi
-    }
+    Biology, Arts, Physics, Hindi
+}

@@ -145,12 +145,6 @@ public class RegistrationPage {
 
         return this;
     }
-
-    public RegistrationPage getModalDialog() {
-        modalDialog.shouldNotBe(visible);
-
-        return this;
-    }
 }
 
 

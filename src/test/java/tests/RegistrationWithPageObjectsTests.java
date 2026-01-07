@@ -1,14 +1,11 @@
 package tests;
 
 import data.Subjects;
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.*;
 import pages.RegistrationPage;
 
-import java.util.List;
 import java.util.stream.Stream;
 
 public class RegistrationWithPageObjectsTests extends tests.TestBase {
@@ -101,11 +98,13 @@ public class RegistrationWithPageObjectsTests extends tests.TestBase {
     static Stream<Arguments> validateFirstNameLastNameSubjects() {
         return Stream.of(
                 Arguments.of(
-                        "Svetlana", "Abramova",
+                        "Svetlana",
+                        "Abramova",
                         String.valueOf(Subjects.Arts)
                 ),
                 Arguments.of(
-                        "Egor", "Antonov",
+                        "Egor",
+                        "Antonov",
                         String.valueOf(Subjects.Biology)
                 )
         );
